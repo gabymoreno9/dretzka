@@ -1,0 +1,124 @@
+.nav-link.active {
+    opacity: 1;
+}
+.nav-link a {
+    color: #222;
+    text-decoration: none;
+}
+.nav-link a:hover {
+    color: blue;
+    text-decoration: none;
+}
+.nav-link {
+    float: left;
+    padding-right: 35px;
+    opacity: .7;
+}
+.nav-bar {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+}
+.nav-contents {
+    float: right;
+    padding-top: 35px;
+    padding-right: 50px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+}
+.nav-logo img{
+    width: 200px;
+    margin-top: 25px;
+    padding-left: 80px;
+
+}
+.nav-logo{
+    width: 200px;
+    float: left;
+}
+body{
+    font-family: "Helvetica Neue";
+}
+html, body { margin: 0; }
+
+.line-card-hero {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.line-card-description{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    color:#222;
+}
+.line-card-logos {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.line-card-logo {
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line-card-logo img { width: 100%; }
+.line-card-logo.too-lorge img { width: 50%; }
+.line-card-logo.emerson img{padding-bottom:40px; }
+
+.footer{
+    width: 100%;
+    height: 340px;
+    background-color: #040B13;
+    overflow: hidden;
+}
+.footer-contact{
+    color: #F3F3F3;
+    float: right;
+    margin-right: 120px;
+}
+.footer-nav{
+    color: #f3f3f3;
+    float:right;
+    margin-right: 100px;
+}
+.footer-info{
+    margin-top: 55px;
+    line-height: 1.5;
+}
+.footer-line{
+    border-bottom: 0.5px solid #EEE;
+    width: 800px;
+    margin:250px auto 0;
+
+}
+
+.dark-logo img {
+    width: 200px;
+    margin-top: 55px;
+    padding-left: 80px;
+    float:left;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+}
+.socials img {
+    width: 20px;
+    padding: 0 10px;
+    padding-top: 20px;
+    cursor: pointer;
+}
