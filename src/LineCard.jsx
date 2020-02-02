@@ -15,8 +15,6 @@ import schonbek from 'assets/images/schonbek.png'
 import studiom from 'assets/images/studiom.png'
 import swarovski from 'assets/images/swarovski.png'
 
-import 'assets/css/index.css'
-
 let lineCards = [
     { image: alloy, href: "https://www.alloyled.com/" },
     { image: elco, href: "https://elcolighting.com/" },
@@ -47,8 +45,8 @@ class LineCard extends React.Component {
             </div>
 
             <div className="line-card-logos">
-                {lineCards.map(card =>
-                    <a href={card.href}>
+                {lineCards.map((card, i) =>
+                    <a key={i} href={card.href}>
                         <div className={`line-card-logo ${card.className}`}>
                             <img src={card.image} />
                         </div>
