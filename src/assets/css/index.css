@@ -19,6 +19,9 @@
     height: 90px;
     position: absolute;
 }
+.nav-bar.dark-mode .nav-link a {
+    color: #FFF;
+}
 .nav-contents {
     float: right;
     padding-top: 35px;
@@ -124,9 +127,9 @@ html, body { margin: 0; }
 }
 
 svg.trapezoidal-horizintal{
+  z-index: -1;
   position: relative;
-  bottom: -5px;
   width: 100%;
-  height: 10vw;
+  height: 800px;
   /* set height to pixels if you want angle to change with screen width */
 }

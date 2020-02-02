@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
-import logo from 'assets/images/logo.png'
+import darkModeLogo from 'assets/images/dark-mode-logo.png'
 
 
 @withRouter
@@ -21,10 +21,10 @@ class NavBar extends React.Component {
     }
 
     render = () =>
-        <div className="nav-bar">
+        <div className={"nav-bar " + (this.props.mode === "dark" ? "dark-mode" : "")}>
             <Link to="/">
                 <div className="nav-logo">
-                    <img src={logo} />
+                    <img src={darkModeLogo} />
                 </div>
             </Link>
 
