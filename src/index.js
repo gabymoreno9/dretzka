@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Route, Router } from 'react-router-dom'
+import { Route, Router, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 
 import LineCard from 'LineCard'
@@ -15,9 +15,11 @@ const history = createBrowserHistory()
 
 ReactDOM.render(
     <Router history={history}>
-        <Route path="/line-card" component={LineCard} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/" component={LandingPage} />
+        <Switch>
+            <Route path="/line-card" component={LineCard} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/contact" component={ContactPage} />
+            <Route path="/" component={LandingPage} />
+        </Switch>
     </Router>,
     document.getElementById("react-content"))
