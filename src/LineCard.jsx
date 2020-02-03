@@ -34,7 +34,7 @@ let lineCards = [
 class LineCard extends React.Component {
     render = () =>
         <div>
-            <NavBar />
+            <NavBar mode = "dark" />
 
             <div className="line-card-hero"
                  style={{ backgroundImage: `url(${halfMoon})` }} />
