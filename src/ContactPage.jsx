@@ -2,6 +2,9 @@ import React from 'react'
 import NavBar from 'ui/NavBar'
 import Footer from 'ui/Footer'
 
+import goldengate from 'assets/images/goldengate.png'
+
+
 
 class ContactPage extends React.Component {
     render = () =>

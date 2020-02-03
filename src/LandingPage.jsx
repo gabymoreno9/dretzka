@@ -6,7 +6,10 @@ import Footer from 'ui/Footer'
 class LandingPage extends React.Component {
     render = () =>
         <div>
-            <NavBar />
+            <NavBar mode="dark" />
+            <div className = "hero">
+
+            </div>
 
             <Footer />
         </div>

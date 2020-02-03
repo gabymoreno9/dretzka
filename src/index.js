@@ -6,6 +6,7 @@ import { createBrowserHistory } from 'history'
 import LineCard from 'LineCard'
 import AboutPage from 'AboutPage'
 import ContactPage from 'ContactPage'
+import LandingPage from 'LandingPage'
 
 import 'assets/css/index.css'
 
@@ -17,5 +18,6 @@ ReactDOM.render(
         <Route path="/line-card" component={LineCard} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/" component={LandingPage} />
     </Router>,
     document.getElementById("react-content"))
