@@ -13,7 +13,7 @@ import legrand from 'assets/images/legrand.png'
 import maxim from 'assets/images/maxim.png'
 import schonbek from 'assets/images/schonbek.png'
 import studiom from 'assets/images/studiom.png'
-import swarovski from 'assets/images/swarovski.png'
+// import swarovski from 'assets/images/swarovski.png'
 
 let lineCards = [
     { image: alloy, href: "https://www.alloyled.com/" },
@@ -26,7 +26,7 @@ let lineCards = [
     { image: maxim, href: "https://www.maximlighting.com/" },
     { image: schonbek, href: "https://www.swarovski-lighting.com/schonbek1870" },
     { image: studiom, href: "https://www.studiomlighting.com/" },
-    { image: swarovski, href: "https://www.swarovski-lighting.com/" }
+    // { image: swarovski, href: "https://www.swarovski-lighting.com/" }
 ]
 
 
