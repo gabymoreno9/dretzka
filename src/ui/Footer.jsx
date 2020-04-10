@@ -28,9 +28,9 @@ class Footer extends React.Component {
                 </div>
 
                 <div className="footer-contact">
-                325 W F St, Dixon,<br />
-                CA 95620<br />
-                (707) 693 - 9900<br />
+                325 W F St, 
+                Dixon, CA 95620<br />
+                (800) 258-0227<br />
                 Fax: (800) 944 - 0174<br />
                 </div>
             </div>

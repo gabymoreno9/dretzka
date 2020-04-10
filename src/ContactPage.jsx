@@ -10,6 +10,14 @@ import goldengate from 'assets/images/goldengate.png'
 
 
 class ContactPage extends React.Component {
+    componentDidMount () {
+        document.body.style.background = "#000";
+    }
+
+    componentWillUnmount () {
+        document.body.style.background = null;
+    }
+
     render = () =>
         <div>
             <NavBar mode="dark" />
@@ -54,8 +62,6 @@ class ContactPage extends React.Component {
                     </div>
                 </div>
             </div>
-
-
 
             <Footer />
         </div>

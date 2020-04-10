@@ -63,11 +63,11 @@ html, body { margin: 0; }
 .column-image {
     background-size: cover;
     height: 400px;
-    width: 50%;
-    max-width: 500px;
+    flex-basis: 50%;
+    max-width: 450px;
 }
 .column-text {
-    flex-grow: 1;
+    flex-basis: 50%;
     height: 400px;
     text-align: center;
 }
@@ -80,10 +80,10 @@ html, body { margin: 0; }
     line-height: 30px;
     font-size: 20px;
 }
-.container{
-    padding-bottom: 20px;
-}
 
+.container{
+    padding-bottom: 80px;
+}
 
 .line-card-hero {
     width: 100%;
