@@ -1,3 +1,12 @@
+
+.MuiAppBar-colorPrimary{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.MuiToolbar-root button {
+    display: none;
+}
+
 .nav-link.active {
     opacity: 1;
 }
@@ -41,6 +50,12 @@
     width: 200px;
     float: left;
 }
+
+@media (max-width: 1020px) {
+    .MuiToolbar-root button { display: block; }
+    .MuiToolbar-root .nav-link { display: none; }
+}
+
 body{
     font-family: "Helvetica Neue";
 }
@@ -89,7 +104,7 @@ html, body { margin: 0; }
     width: 100%;
     height: 80vh;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 
 .line-card-description{

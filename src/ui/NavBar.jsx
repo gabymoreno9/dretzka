@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
-import regularLogo from 'assets/images/logo.png'
+import logo from 'assets/images/logo.png'
 import darkModeLogo from 'assets/images/dark-mode-logo.png'
+
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import IconButton from '@material-ui/core/IconButton'
+import MenuIcon from '@material-ui/icons/Menu'
 
 
 @withRouter
@@ -22,14 +27,16 @@ class NavBar extends React.Component {
     }
 
     render = () =>
-        <div className={"nav-bar " + (this.props.mode === "dark" ? "dark-mode" : "")}>
-            <Link to="/">
-                <div className="nav-logo">
-                    <img src={this.props.mode === "dark" ? darkModeLogo : regularLogo} />
+        <AppBar position="fixed">
+            <Toolbar>
+                <div className="nav-logo-wrapper" style={{ flexGrow: 1 }}>
+                    <Link to="/">
+                        <div className="nav-logo">
+                            <img src={this.props.mode === "dark" ? darkModeLogo : logo} />
+                        </div>
+                    </Link>
                 </div>
-            </Link>
 
-            <div className="nav-contents">
                 <div className={this.getNavLinkClass("services")}>
                     <Link to="/">Services</Link>
                 </div>
@@ -42,8 +49,39 @@ class NavBar extends React.Component {
                 <div className={this.getNavLinkClass("line-card")}>
                     <Link to="/line-card">Line Card</Link>
                 </div>
-            </div>
-        </div>
+
+                <IconButton
+                    color="inherit"
+                    aria-label="open drawer"
+                    edge="end"
+                    onClick={this.handleOpenSidebar}>
+                    <MenuIcon style={{ color: '#222' }} />
+                </IconButton>
+            </Toolbar>
+        </AppBar>
+
+        // <div className={"nav-bar " + (this.props.mode === "dark" ? "dark-mode" : "")}>
+        //     <Link to="/">
+        //         <div className="nav-logo">
+        //             <img src={this.props.mode === "dark" ? darkModeLogo : logo} />
+        //         </div>
+        //     </Link>
+        //
+        //     <div className="nav-contents">
+        //         <div className={this.getNavLinkClass("services")}>
+        //             <Link to="/">Services</Link>
+        //         </div>
+        //         <div className={this.getNavLinkClass("about-us")}>
+        //             <Link to="/about">About Us</Link>
+        //         </div>
+        //         <div className={this.getNavLinkClass("contact")}>
+        //             <Link to="/contact">Contact</Link>
+        //         </div>
+        //         <div className={this.getNavLinkClass("line-card")}>
+        //             <Link to="/line-card">Line Card</Link>
+        //         </div>
+        //     </div>
+        // </div>
 }
 
 
