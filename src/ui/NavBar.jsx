@@ -27,7 +27,7 @@ class NavBar extends React.Component {
     }
 
     render = () =>
-        <AppBar position="fixed">
+        <AppBar position="absolute" className={"nav-bar " + (this.props.mode === "dark" ? "dark-mode" : "")}>
             <Toolbar>
                 <div className="nav-logo-wrapper" style={{ flexGrow: 1 }}>
                     <Link to="/">
@@ -55,7 +55,7 @@ class NavBar extends React.Component {
                     aria-label="open drawer"
                     edge="end"
                     onClick={this.handleOpenSidebar}>
-                    <MenuIcon style={{ color: '#222' }} />
+                    <MenuIcon style={{ color: this.props.mode === "dark" ? '#FFF' : '#222' }} />
                 </IconButton>
             </Toolbar>
         </AppBar>
