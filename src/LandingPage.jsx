@@ -1,6 +1,5 @@
 import React from 'react'
-import NavBar from 'ui/NavBar'
-import Footer from 'ui/Footer'
+import PageWithNavBar from 'ui/PageWithNavBar'
 
 import landingPageHero from 'assets/images/landingPageHero.png'
 import landingPageDining from 'assets/images/landingPageDining.png'
@@ -9,15 +8,14 @@ import landingPageKitchen from 'assets/images/LandingPageKitchen.png'
 import landingPageTable from 'assets/images/landingPageTable.png'
 
 
-
-
 class LandingPage extends React.Component {
     render = () =>
-        <div className="landing-page">
-            <NavBar mode="dark" />
+        <PageWithNavBar mode="dark" className="landing-page">
             <div className="hero" style={{ backgroundImage: `url(${landingPageHero})` }} />
             <div className="line-card-description">
-            Dretzka and Associates strive to provide the highest in quality and stylish lighting and ceiling fan products for every application weather it be in commercial or residential environments
+            Dretzka and Associates strive to provide the highest in quality and
+            stylish lighting and ceiling fan products for every application whether 
+            it be in commercial or residential environments
             </div>
 
             <div className="container">
@@ -25,9 +23,9 @@ class LandingPage extends React.Component {
                     <div className="column-image" style={{ backgroundImage: `url(${landingPageDining})` }} />
                     <div className="column-text" >
                         <h1>Modern <br/> Solutions</h1>
-                        
-                        <p>We have a multitude of solutions for 
-                        all design needs from traditional to 
+
+                        <p>We have a multitude of solutions for
+                        all design needs from traditional to
                         contemporary and everything in between.</p>
                     </div>
                 </div>
@@ -35,9 +33,9 @@ class LandingPage extends React.Component {
                 <div className="row">
                     <div className="column-text" >
                         <h1>Our <br/> Purpose</h1>
-                        <p>   
-                            Your needs become our needs.  
-                            Let us help you succeed with any 
+                        <p>
+                            Your needs become our needs.
+                            Let us help you succeed with any
                             and all that we have to offer.
                         </p>
                     </div>
@@ -57,8 +55,8 @@ class LandingPage extends React.Component {
                 <div className="row">
                     <div className="column-text" >
                         <h1>Let's <br/> Talk</h1>
-                        <p>Dretzka and Associates are 
-                            here to help in any way we can.  
+                        <p>Dretzka and Associates are
+                            here to help in any way we can.
                             Feel free to reach out to us at any time:<br/>
                             ken@dretzka.com<br/>
                             kenny@dretzka.com<br/>
@@ -69,9 +67,7 @@ class LandingPage extends React.Component {
                     <div className="column-image" style={{ backgroundImage: `url(${landingPageKitchen})` }} />
                 </div>
             </div>
-
-            <Footer />
-        </div>
+        </PageWithNavBar>
 }
 
 

@@ -54,34 +54,11 @@ class NavBar extends React.Component {
                     color="inherit"
                     aria-label="open drawer"
                     edge="end"
-                    onClick={this.handleOpenSidebar}>
-                    <MenuIcon style={{ color: this.props.mode === "dark" ? '#FFF' : '#222' }} />
+                    onClick={this.props.handleOpenDrawer}>
+                    <MenuIcon style={{ fontSize: '40px', color: this.props.mode === "dark" ? '#FFF' : '#222' }} />
                 </IconButton>
             </Toolbar>
         </AppBar>
-
-        // <div className={"nav-bar " + (this.props.mode === "dark" ? "dark-mode" : "")}>
-        //     <Link to="/">
-        //         <div className="nav-logo">
-        //             <img src={this.props.mode === "dark" ? darkModeLogo : logo} />
-        //         </div>
-        //     </Link>
-        //
-        //     <div className="nav-contents">
-        //         <div className={this.getNavLinkClass("services")}>
-        //             <Link to="/">Services</Link>
-        //         </div>
-        //         <div className={this.getNavLinkClass("about-us")}>
-        //             <Link to="/about">About Us</Link>
-        //         </div>
-        //         <div className={this.getNavLinkClass("contact")}>
-        //             <Link to="/contact">Contact</Link>
-        //         </div>
-        //         <div className={this.getNavLinkClass("line-card")}>
-        //             <Link to="/line-card">Line Card</Link>
-        //         </div>
-        //     </div>
-        // </div>
 }
 
 
