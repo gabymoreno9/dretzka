@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
-import darkLogo from "assets/images/darkLogo.png"
+import darklogo from "assets/images/dark-mode-logo.png"
 import insta from "assets/images/insta.png"
 import facebook from "assets/images/facebook.png"
 import linkedin from "assets/images/linkedin.png"
@@ -15,16 +15,16 @@ class Footer extends React.Component {
         <div className="footer">
             <Link to="/">
                 <div className="dark-logo">
-                    <img src={darkLogo} />
+                    <img src={darklogo} />
                 </div>
             </Link>
 
             <div className="footer-info">
                 <div className="footer-nav">
-                Services <br />
-                About Us <br />
-                Contact Page <br />
-                Line Card <br />
+                    <Link to="/">Services <br /></Link>
+                    <Link to="/about">About Us <br /></Link>
+                    <Link to="/contact">Contact Page <br /></Link>
+                    <Link to="/line-card">Line Card <br /></Link>
                 </div>
 
                 <div className="footer-contact">
