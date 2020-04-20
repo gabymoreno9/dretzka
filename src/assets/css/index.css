@@ -88,10 +88,32 @@
         width: 60% !important;
     }
 }
-
+/* footer */
 @media (max-width: 600px) {
     .footer {
         padding-top:50px;
+    }
+}
+@media (max-width: 760px) {
+    .dark-logo img {
+        width: 225px !important;
+    }
+}
+@media (max-width: 500px) {
+    .footer-contact {
+        margin-right: 70px !important;
+        padding-top:30px;
+    }
+    .footer-nav{
+        padding-top: 30px;
+    }
+}
+@media (max-width: 403px) {
+    .footer-nav {
+        margin-right: 0px !important;
+    }
+    .footer{
+        padding-top:100px;
     }
 }
 
