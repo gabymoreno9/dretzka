@@ -45,6 +45,17 @@
     float: left;
 }
 
+@media (max-width: 575px) {
+    .line-card-hero {
+        height: 50vh !important;
+    }
+}
+@media (max-width: 713px) {
+    .nav-logo img{
+        padding-left: 10px;
+    }
+}
+
 @media (max-width: 1020px) {
     .nav-bar button { display: block; }
     .nav-bar .nav-link { display: none; }
