@@ -49,6 +49,16 @@
     .nav-bar button { display: block; }
     .nav-bar .nav-link { display: none; }
 }
+.MuiListItem-gutters{
+    padding-right: 120px !important;
+    padding-left: 40px !important;
+}
+.MuiSvgIcon-root{
+    font-size: 40px !important;
+}
+.MuiListItem-root{
+    font-size: 40px !important;
+}
 
 body{
     font-family: "Helvetica Neue";

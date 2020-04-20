@@ -25,8 +25,12 @@ class NavBarDrawer extends React.Component {
             <Divider />
 
             <List>
-                <ListItem button>Is me</ListItem>
-                <ListItem button>A kitty!!!</ListItem>
+                <ListItem button>Services</ListItem>
+                <ListItem button>About Us</ListItem>
+                <ListItem button>Contact</ListItem>
+                <ListItem button>Line Card</ListItem>
+
+
             </List>
         </Drawer>
 }
