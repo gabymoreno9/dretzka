@@ -1,17 +1,18 @@
 import React from 'react'
-import NavBar from 'ui/NavBar'
-import Footer from 'ui/Footer'
+import PageWithNavBar from 'ui/PageWithNavBar'
+
 
 
 class AboutPage extends React.Component {
     render = () =>
         <div>
-            <NavBar mode = "dark"/>
+            <PageWithNavBar mode="dark" className="landing-page">
+                
+            </PageWithNavBar>
 
 
 
 
-            <Footer />
         </div>
 }
 

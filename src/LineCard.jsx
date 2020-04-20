@@ -1,6 +1,5 @@
 import React from 'react'
-import NavBar from 'ui/NavBar'
-import Footer from 'ui/Footer'
+import PageWithNavBar from 'ui/PageWithNavBar'
 
 import halfMoon from 'assets/images/half-moon.jpg'
 import alloy from 'assets/images/alloy.png'
@@ -33,9 +32,7 @@ let lineCards = [
 
 class LineCard extends React.Component {
     render = () =>
-        <div>
-            <NavBar />
-
+        <PageWithNavBar>
             <div className="line-card-hero"
                  style={{ backgroundImage: `url(${halfMoon})` }} />
 
@@ -52,9 +49,7 @@ class LineCard extends React.Component {
                         </div>
                     </a>)}
             </div>
-
-            <Footer />
-        </div>
+        </PageWithNavBar>
 }
 
 

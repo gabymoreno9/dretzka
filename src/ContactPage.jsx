@@ -1,9 +1,7 @@
 import React from 'react'
-import NavBar from 'ui/NavBar'
-import Footer from 'ui/Footer'
+import PageWithNavBar from 'ui/PageWithNavBar'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-
 
 import goldengate from 'assets/images/goldengate.png'
 
@@ -19,9 +17,7 @@ class ContactPage extends React.Component {
     }
 
     render = () =>
-        <div>
-            <NavBar mode="dark" />
-
+        <PageWithNavBar mode="dark">
             <div className="contact-page">
                 <svg className="trapezoidal-horizintal" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -62,9 +58,7 @@ class ContactPage extends React.Component {
                     </div>
                 </div>
             </div>
-
-            <Footer />
-        </div>
+        </PageWithNavBar>
 }
 
 

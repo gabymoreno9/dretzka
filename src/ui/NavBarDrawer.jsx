@@ -12,6 +12,10 @@ import ListItemText from '@material-ui/core/ListItemText'
 
 
 class NavBarDrawer extends React.Component {
+    goto = url => event => {
+        this.props.history.push(url)
+    }
+
     render = () =>
         <Drawer variant="persistent"
                 anchor="right"
@@ -25,15 +29,13 @@ class NavBarDrawer extends React.Component {
             <Divider />
 
             <List>
-                <ListItem button>Services</ListItem>
-                <ListItem button>About Us</ListItem>
-                <ListItem button>Contact</ListItem>
-                <ListItem button>Line Card</ListItem>
-
-
+                <ListItem button onClick={this.goto('/')}>Services</ListItem>
+                <ListItem button onClick={this.goto('/about')}>About Us</ListItem>
+                <ListItem button onClick={this.goto('/contact')}>Contact</ListItem>
+                <ListItem button onClick={this.goto('/line-card')}>Line Card</ListItem>
             </List>
         </Drawer>
 }
 
 
-export default NavBarDrawer
+export default withRouter(NavBarDrawer)
