@@ -337,3 +337,6 @@ svg.trapezoidal-horizintal{
     display: flex;
     justify-content: space-between;
 }
+.about-us-title{
+    font-size: 30px;
+}

@@ -19,7 +19,6 @@ let lineCards = [
     { image: elco, href: "https://elcolighting.com/" },
     { image: et2, href: "https://www.et2online.com/", className: "too-lorge" },
     { image: bulbrite, href: "https://bulbrite.com/" },
-    { image: emerson, href: "https://www.emerson.com/en-us", className: "emerson" },
     { image: fanimation, href: "https://www.fanimation.com/" },
     { image: legrand, href: "https://www.legrand.us/" },
     { image: maxim, href: "https://www.maximlighting.com/" },
