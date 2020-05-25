@@ -337,6 +337,28 @@ svg.trapezoidal-horizintal{
     display: flex;
     justify-content: space-between;
 }
+.about-us-page {
+    padding-top: 90px;
+    background: black;
+}
 .about-us-title{
     font-size: 30px;
+    color: white;
+    margin-left: 80px;
+}
+.our-history{
+    color: white;
+    margin-left: 80px;
+    font-size: 25px;
+}
+.our-history p{
+    font-size: 18px;
+}
+.our-mission{
+    color: white;
+    margin-left: 80px;
+    font-size: 25px;
+}
+.our-mission p{
+    font-size: 18px;
 }
