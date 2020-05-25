@@ -37,7 +37,7 @@
 .nav-logo img{
     width: 200px;
     margin-top: 25px;
-    padding-left: 80px;
+    padding-left: 56px;
 
 }
 .nav-logo{
@@ -341,15 +341,37 @@ svg.trapezoidal-horizintal{
     padding-top: 90px;
     background: black;
 }
+.about-us-content {
+    display: flex;
+}
+.about-us-text {
+    flex: 0 0 400px;
+}
 .about-us-title{
     font-size: 30px;
     color: white;
     margin-left: 80px;
 }
+.profile-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profile-pic {
+    flex: 0 0 300px;
+    margin: 0 40px 60px;
+    color: white;
+    text-align: center;
+
+}
+.profile-pic img {
+    width: 100%;
+}
 .our-history{
     color: white;
     margin-left: 80px;
     font-size: 25px;
+    padding-top: 20px;
 }
 .our-history p{
     font-size: 18px;
